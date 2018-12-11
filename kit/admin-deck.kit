@@ -1,0 +1,123 @@
+<!-- @import variables -->
+<!-- $admin-deck-nav: item item-current -->
+<!-- @import admin-header -->
+
+<div class="site-content admin-site-content">
+  <div class="inner">
+
+    <div class="main admin-main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+      <div class="wrapper">
+        
+        <div class="admin-page">
+          <div class="action-notice success">
+            <span class="notice-close" title="Close">
+              <svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-times"/></svg>
+            </span>
+            <p>Successfully delete from export</p>
+          </div>
+          <div class="admin-page-heading">
+            <div class="heading">
+              <div class="heading-title">
+                <h1 class="title">Decks</h1>
+                <a href="admin-deck-new.html" class="button">Add Deck</a>
+              </div>
+              <div class="filter">
+                <a href="#" class="is-current">All (100)</a>
+                <a href="#">Image Decks (80)</a>
+                <a href="#">Text Decks (20)</a>
+              </div>
+            </div>
+            <div class="filter-input">
+              <form>
+                <div class="filter-input-search">
+                  <input type="text" class="input" placeholder="Search">
+                  <button class="search-button" type="submit">
+                      <svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-search"/></svg>
+                  </button>
+                </div>
+                <div class="filter-input-sort">
+                  <select class="input">
+                    <option>Sort A-Z</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="admin-page-content">
+            <div class="deck-list">
+              <div class="table-wrapper">
+                <table class="table-list">
+                  <thead>
+                    <tr>
+                      <th><input type="checkbox" class="list-check-all"></th>
+                      <th>Deck Name</th>
+                      <th>Deck Type</th>
+                      <th>Card Count</th>
+                      <th>In Folder</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox" class="list-check"></td>
+                      <td>Actions</td>
+                      <td>Text</td>
+                      <td>200 cards</td>
+                      <td>none</td>
+                      <td class="table-actions">
+                        <a href="#"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-eye"/></svg></a>
+                        <a href="#delete-deck" class="js-popup-link"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-trash"/></svg></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" class="list-check"></td>
+                      <td>Big Dogs</td>
+                      <td>Image</td>
+                      <td>15 cards</td>
+                      <td>2</td>
+                      <td class="table-actions">
+                        <a href="#"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-eye"/></svg></a>
+                        <a href="#"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-trash"/></svg></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-footer">
+                <div class="selected-count">
+                  <p>2 items selected</p>
+                </div>
+                <div class="footer-action">
+                  <a href="#" class="button">Add Selection to Export</a>
+                </div>
+              </div>
+            </div>
+            <div class="pagination">
+              <div class="pagination-nav">
+                <ul>
+                  <li class="is-disabled"><span class="a"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-chevron-left"/></svg> Prev</span></li>
+                  <li class="is-current"><span class="a">1</span></li>
+                  <li><a href="#" class="a">2</a></li>
+                  <li><a href="#" class="a">3</a></li>
+                  <li><a href="#" class="a">4</a></li>
+                  <li><a href="#" class="a">5</a></li>
+                  <li><a href="#" class="a">...</a></li>
+                  <li><a href="#" class="a">20</a></li>
+                  <li><a href="#" class="a">Next <svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-chevron-right"/></svg></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- @import designby -->
+
+      </div>
+    </div>
+
+    <!-- @import admin-side-menu -->
+
+  </div>
+</div>
+
+<!-- @import admin-footer -->

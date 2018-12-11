@@ -1,0 +1,311 @@
+/*!
+Theme Name: Hunter Documentation
+Author: Benny Jien
+Author URI: http://bennyjien.com/
+*/
+
+@import "../assets/scss/variables";
+@import "../assets/scss/mixins";
+
+.doc-site {
+	background-color: $white;
+	display: flex;
+	flex-wrap: wrap;
+
+	.doc-site-header {
+		border-right: 1px solid $color-border;
+		flex: 0 0 240px;
+
+		.inner {
+			padding-bottom: 32px;
+			padding-top: 32px;
+		}
+	}
+
+	.doc-site-content {
+		flex: 1 1 auto;
+		min-width: 0;
+		width: calc(100% - 240px);
+
+		.inner {
+			max-width: 1024px;
+		}
+	}
+
+	.doc-site-footer {
+		border-top: 1px solid $color-border;
+		flex: 1 1 100%;
+
+		.inner {
+			padding-bottom: 24px;
+			padding-top: 24px;
+		}
+	}
+}
+
+.doc-wrapper {
+	padding-left: 16px;
+	padding-right: 16px;
+
+	@include breakpoint(creeper) {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	@include breakpoint(crawler) {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	@include breakpoint(jumper) {
+		padding-left: 48px;
+		padding-right: 48px;
+	}
+}
+
+.doc-main {
+	order: 2;
+}
+
+.doc-main-sidebar {
+	order: 1;
+
+	@include breakpoint(walker) {
+		order: 3;
+	}
+
+	.content {
+		position: sticky;
+		top: 32px;
+	}
+}
+
+.doc-logo {
+	@include font-size-h1;
+	color: $color-400;
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	margin-bottom: 4px;
+	padding: 0 32px;
+}
+
+.doc-tagline {
+	@include font-size-100;
+	color: $color-text-light;
+	letter-spacing: 0.1em;
+	padding: 0 32px;
+	text-transform: uppercase;
+}
+
+.doc-nav {
+
+	.item {
+		border-bottom: 1px solid $color-border-light;
+
+		&:first-child {
+			border-top: 1px solid $color-border-light;
+		}
+	}
+
+	a {
+		color: $color-text;
+		display: block;
+		font-weight: 700;
+		padding: 16px 32px;
+
+		&:hover,
+		&:focus {
+			color: $color-one-500;
+			text-decoration: none;
+		}
+	}
+}
+
+.doc-copyright {
+	@include font-size-200;
+}
+
+.doc-section {
+	border-bottom: 1px solid $color-border-light;
+	padding: 64px;
+
+	&:last-child {
+		border-bottom: 0;
+	}
+
+	> .header {
+		margin-bottom: 40px;
+
+		.title {
+			display: inline-block;
+		}
+	}
+
+	.subsection {
+		margin-bottom: 40px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.title {
+			@include font-size-h6;
+			color: $color-text-light;
+			margin-bottom: 4px;
+			text-transform: uppercase;
+		}
+	}
+
+	.example {
+		background-color: rgba($black, 0.04);
+		margin: 24px 0;
+		padding: 48px 24px 24px;
+		position: relative;
+
+		&:before {
+			content: "Example";
+			color: $color-text-light;
+			font-size: $font-size-300;
+			line-height: 1;
+			position: absolute;
+			text-transform: uppercase;
+			top: 20px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.doc-list {
+	font-size: 0;
+	margin-bottom: -8px;
+
+	.item {
+		@include font-size-500;
+		margin-bottom: 8px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&.doc-list-inline {
+
+		.item {
+			display: inline-block;
+			margin-right: 8px;
+		}
+	}
+}
+
+.doc-colors {
+
+	.colors-group {
+		display: flex;
+	}
+
+	.colors {
+		flex: 1 1 0;
+		list-style: none;
+		margin-bottom: 0;
+		margin-right: 24px;
+		padding: 0;
+		position: relative;
+
+		&:before {
+			content: "";
+			border: 1px solid rgba($black, 0.1);
+			bottom: 0;
+			left: 0;
+			pointer-events: none;
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 1;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		li {
+			background-color: $black;
+			color: rgba($white, 0.8);
+			padding: 8px;
+			position: relative;
+
+			span {
+				@include font-size-400;
+				display: block;
+				padding: 2px 0;
+			}
+
+			.name {
+				font-weight: 700;
+			}
+
+			&.color-light {
+				color: rgba($black, 0.5);
+			}
+		}
+	}
+}
+
+.doc-typography {
+
+	.glyphs {
+		@include font-size-900;
+		@include hyphenate;
+		border: 1px solid rgba($black, 0.1);
+		margin-bottom: 24px;
+		padding: 16px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.title {
+			text-transform: none;
+		}
+	}
+}
+
+.doc-animation {
+
+	.scene {
+		margin-bottom: 12px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.box {
+		align-items: center;
+		background-color: $color-500;
+		display: flex;
+		height: 64px;
+		transition: all 0.2s ease-out;
+		width: 64px;
+
+		.label {
+			@include font-size-400;
+			color: $white;
+			padding: 8px;
+		}
+
+		&:hover {
+			width: 100%;
+		}
+
+		&.box-bounce {
+			transition: all 0.2s $ease-out-back;
+		}
+	}
+}
+
+.doc-toggle-test {
+	display: none;
+}

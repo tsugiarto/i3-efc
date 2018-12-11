@@ -1,0 +1,91 @@
+<!-- @import variables -->
+<!-- $admin-folder-nav: item item-current -->
+<!-- @import admin-header -->
+
+<div class="site-content admin-site-content">
+  <div class="inner">
+
+    <div class="main admin-main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+      <div class="wrapper">
+        
+        <div class="admin-page">
+          <div class="admin-page-heading">
+            <div class="heading">
+              <div class="heading-title">
+                <h1 class="title">Folder</h1>
+                <a href="admin-folder.html" class="button button-grey">Back to Folders</a>
+              </div>
+            </div>
+          </div>
+          <div class="admin-page-content">
+            
+            <form class="form">
+              <div class="form-main">
+                <div class="form-section">
+                  <div class="form-text">
+                    <input type="text" class="input" placeholder="Folder Name">
+                  </div>
+                  <div class="form-text">
+                    <textarea class="input" rows="4" placeholder="Folder Description"></textarea>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <h3 class="heading">Pick Decks</h3>
+                  <div class="form-repeater js-form-repeater" data-repeater-max="5">
+                    <div id="slip-repeaters" class="repeaters">
+                      <div class="slip-no-swipe repeater repeater-source">
+                        <span class="repeater-sort"></span>
+                        <div class="repeater-field form-select">
+                          <select class="input" name="deck" data-repeater-id="deck-{timestamp}">
+                            <option>Choose Deck</option>
+                          </select>
+                        </div>
+                        <button class="form-repeater-remove button" type="button" title="Delete Row">
+                          <svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-minus"/></svg>
+                        </button>
+                      </div>
+                      <div class="slip-no-swipe repeater">
+                        <span class="repeater-sort"></span>
+                        <div class="repeater-field form-select">
+                          <select class="input" name="deck" data-repeater-id="deck-{timestamp}">
+                            <option>Animals</option>
+                          </select>
+                        </div>
+                        <button class="form-repeater-remove button" type="button" title="Delete Row">
+                          <svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-minus"/></svg>
+                        </button>
+                      </div>
+                    </div>
+                    <button class="form-repeater-add button" type="button">Add Row</button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-aside">
+                <div class="aside-actions">
+                  <button class="button button-save" type="submit">Save</button>
+                  <button class="button button-grey" type="button">Preview</button>
+                  <button class="button button-grey" type="button">Cancel</button>
+                </div>
+                <div class="aside-widget">
+                  <p class="heading">FOLDER THAT USE THIS DECK</p>
+                  <ul>
+                    <li><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-folder"/></svg> Animals</li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+        <!-- @import designby -->
+
+      </div>
+    </div>
+
+    <!-- @import admin-side-menu -->
+
+  </div>
+</div>
+
+<!-- @import admin-footer -->

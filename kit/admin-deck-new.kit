@@ -1,0 +1,118 @@
+<!-- @import variables -->
+<!-- $admin-deck-nav: item item-current -->
+<!-- @import admin-header -->
+
+<div class="site-content admin-site-content">
+  <div class="inner">
+
+    <div class="main admin-main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+      <div class="wrapper">
+        
+        <div class="admin-page">
+          <div class="admin-page-heading">
+            <div class="heading">
+              <div class="heading-title">
+                <h1 class="title">Deck</h1>
+                <a href="admin-deck.html" class="button button-grey">Back to Decks</a>
+              </div>
+            </div>
+          </div>
+          <div class="admin-page-content">
+            
+            <form class="form">
+              <div class="form-main">
+                <div class="form-section">
+                  <div class="form-text">
+                    <input type="text" class="input" placeholder="Card Name">
+                  </div>
+                  <div class="form-select">
+                    <select class="input">
+                      <option>Image Deck</option>
+                    </select>
+                  </div>
+                  <div class="form-select">
+                    <select class="input">
+                      <option>Duration per card</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <h3 class="heading">Pick Cards</h3>
+                  <a href="#popup-new-card" class="button button-green button-create-card js-popup-link">CREATE NEW CARD</a>
+                  <div class="form-repeater js-form-repeater" data-repeater-max="5">
+                    <div id="slip-repeaters" class="repeaters">
+                      <div class="slip-no-swipe repeater repeater-source">
+                        <span class="repeater-sort"></span>
+                        <div class="repeater-field form-select">
+                          <select class="input" name="card" data-repeater-id="card-{timestamp}">
+                            <option>Duck</option>
+                            <option>Bear</option>
+                          </select>
+                        </div>
+                        <button class="form-repeater-remove button" type="button" title="Delete Row">
+                          <svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-minus"/></svg>
+                        </button>
+                      </div>
+                      <div class="slip-no-swipe repeater">
+                        <span class="repeater-sort"></span>
+                        <div class="repeater-field form-select">
+                          <select class="input js-select2" name="card" data-repeater-id="card-{timestamp}">
+                            <option>Duck</option>
+                            <option>Bear</option>
+                          </select>
+                        </div>
+                        <button class="form-repeater-remove button" type="button" title="Delete Row">
+                          <svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-minus"/></svg>
+                        </button>
+                      </div>
+                    </div>
+                    <button class="form-repeater-add button" type="button">Add Row</button>
+                  </div>
+                </div>
+
+                <!-- 23.11.18 -->
+                <div class="form-section">
+                  <h3 class="heading">Display Type</h3>
+                  <div class="form-radios">
+                    <div class="form-radio">
+                      <input type="radio" id="sort-sequential" class="input" name="sort_type" value="sequential" checked>
+                      <label for="sort-sequential" class="label">Show Sequential</label>
+                    </div>
+                    <div class="form-radio">
+                      <input type="radio" id="sort-randomly" class="input" name="sort_type" value="random">
+                      <label for="sort-randomly" class="label">Show Randomly</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 23.11.18 -->
+
+              <div class="form-aside">
+                <div class="aside-actions">
+                  <button class="button button-save" type="submit">Save</button>
+                  <a href="#deck-preview" class="button button-orange js-popup-link">Preview</a>
+                  <button class="button button-grey" type="button">Cancel</button>
+                </div>
+                <div class="aside-widget">
+                  <p class="heading">FOLDER THAT USE THIS DECK</p>
+                  <ul>
+                    <li><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-folder"/></svg> Animals</li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+        <!-- @import designby -->
+
+      </div>
+    </div>
+
+    <!-- @import admin-side-menu -->
+
+  </div>
+</div>
+
+<!-- @import admin-footer -->

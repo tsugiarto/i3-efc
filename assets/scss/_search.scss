@@ -1,0 +1,40 @@
+@at-root {
+	.search-form {
+		position: relative;
+
+		&:hover,
+		&:focus {
+
+			.button {
+				opacity: 0.4;
+			}
+		}
+
+		.label {
+			display: none;
+		}
+
+		.input {
+			width: 100%;
+		}
+
+		.button {
+			background: transparent url('library/images/icon-search.png') no-repeat center center;
+			background-size: 16px 16px;
+			border: 0;
+			height: 100%;
+			opacity: 0.2;
+			position: absolute;
+			right: 0;
+			text-indent: -9999px;
+			top: 0;
+			transition: all 0.3s ease-out;
+			width: 30px;
+
+			&:hover,
+			&:focus {
+				opacity: 0.8;
+			}
+		}
+	}
+}

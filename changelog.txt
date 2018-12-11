@@ -1,0 +1,54 @@
+13.08.18
++ card-text.html
++ update style.css
++ assets/fonts/gothicb.ttf
+
+14.08.18
++ update style.css
++ update script.js
+  + // Tommy 14.08.18
+  + // Tommy 14.08.18 Fix short key
+  + //Tommy Update Audio player 15.08.18
++ update style.js // Tommy 14.08.18 Fix Slip Js
++ update admin-card-image-new.html (image rec. size and upload able audio file)
++ update admin-card-text-new.html (max. character and upload able audio file)
+
+16.08.18
++ update syle.css
++ popup deck preview ada di admin footer <!-- popup preview deck -->
++ update admin-deck-new.html (button preview)
+
+27.08.18
++ update style.css
++ admin-login.html
++ admin-forget-password.html
++ admin-reset-password.html
++ admin-users.html
++ admin-users-new.html
++ file svg icon-user.svg
++ menu user only visible by super admin
+
+30.08.18
++ update style.css
++ revisi typo di admin-dashboard.html (contoh html terbaru)
++ tambah html design by di setiap halaman, kecuali halaman play deck (struktur html ada yg berubah)
+
+05.09.18
++ update repeater.js
++ update style.css
++ update script.js //Tommy 5.09.18
++ update admin-deck-new.html (check select class inside ".repeater")
+
+23.11.18
++ update style.css
++ tambah admin-card-text.html
++ update html admin-deck-new.html, tambah field display type, check comment 23.11.18
+
+26.11.18
++ update style.css
++ update style.js
++ update script.js, cari comment "Tommy 26.11.18"
++ tambah admin-deck-text-new.html
++ update popup deck text ada di footer, cari comment "popup preview deck text 26.11.18"
++ update html di halaman admin-card-text-new.html, cari comment "26.11.18"
++ update html deck.html, check comment "26.11.18"

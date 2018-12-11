@@ -1,0 +1,48 @@
+@at-root {
+  .form-repeater {
+    .form-repeater-add {
+      margin-top: 8px;
+    }
+
+    .repeater {
+      ms-flex-align: center;
+      align-items: center;
+      display: -ms-flexbox;
+      display: flex;
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      margin-bottom: 8px;
+      cursor: default;
+      outline: 0;
+
+      .repeater-field {
+        flex: 1 0 0;
+        margin: 0 8px 0 10px;
+      }
+
+      &.repeater-source {
+        opacity: 0;
+        height: 0;
+      }
+
+      .repeater-sort {
+        font-size: 24px;
+        color: $color-text-light;
+        width: 17px;
+        height: 17px;
+        background: url('../images/icon-sort.png') center;
+        background-size: cover;
+      }
+
+      .form-repeater-remove {
+        background-color: $white;
+        color: $color-text;
+        border: 1px solid rgba(0,0,0,0.2);
+        font-size: 24px;
+        padding: 12px;
+        line-height: 1;
+      }
+    }
+  }
+}

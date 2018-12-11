@@ -1,0 +1,195 @@
+<!-- @import variables -->
+<!-- $home-nav: item item-current -->
+<!-- @import header -->
+
+			<div class="site-content">
+				<div class="inner wrapper">
+
+					<div class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<header class="main-header js-scene">
+							<a href="http://placehold.it/480x480/" class="js-togglea" data-toggle-type="image" data-toggle-trigger="hover"><img src="http://placehold.it/240x240/eeeeee/111111"></a>
+						</header>
+						<div class="main-content">
+							<div id="emaple" class="example js-mover" data-mover-breakpoint="600" data-mover-target="#example1">
+								<a href="#toggle-test" class="js-toggle" data-toggle-area="#emaple" data-toggle-method="auto" data-toggle-duration="1">Toggle It!</a>
+								<div id="toggle-test" class="doc-toggle-test toggle-target">
+									<p>Horayy... It is toggled!</p>
+									<div class="form-phone">
+										<label for="checkout-phone" class="label">Telepon</label>
+										<div class="input">
+											<input type="text" class="input input-code" value="+62" readonly>
+											<input type="text" id="checkout-phone" class="input input-phone">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="example1" class="example">
+								<a href="#toggle-test2" class="js-toggle" data-toggle-trigger="hover" data-toggle-area="#toggle-test">Toggle Them!</a>
+								<div id="toggle-test2" class="doc-toggle-test toggle-target">
+									<p>Horayy... We are toggled!</p>
+								</div>
+							</div>
+							<div id="toggle-popup">
+								<a href="#popup" class="js-toggle" data-toggle-area="#about-popup" data-toggle-animation="slide" data-toggle-keyclose="true">Popup</a>
+								<div id="popup" class="toggle-popup-container">
+									<div class="toggle-popup-content">
+										<div id="about-popup" class="section">
+											<p>THIS IS POPUP!</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="navigation">
+								<a href="#nav-1" id="nav-toggle-1" class="js-toggle" data-toggle-trigger="hover" data-toggle-area="#navigation">Toggle Nav 1</a>
+								<a href="#nav-2" id="nav-toggle-2" class="js-toggle" data-toggle-trigger="hover" data-toggle-area="#navigation" data-toggle-state="toggled">Toggle Nav 2</a>
+								<a href="#nav-3" id="nav-toggle-3" class="js-toggle" data-toggle-trigger="hover" data-toggle-area="#navigation">Toggle Nav 3</a>
+								<div id="nav-1" class="toggle-target">
+									<h1>Nav 1</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, iste.</p>
+								</div>
+								<div id="nav-2" class="toggle-target">
+									<h1>Nav 2</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, iste.</p>
+								</div>
+								<div id="nav-3" class="toggle-target">
+									<h1>Nav 3</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, iste.</p>
+								</div>
+							</div>
+							<div class="example">
+								<div class="doc-tab-nav">
+									<a href="#tab-1" class="js-tab" data-tab-group="tab" data-tab-type="collapse">Switch 1</a>
+									<a href="#tab-2" class="js-tab" data-tab-group="tab" data-tab-type="collapse">Scroll Switch 2</a>
+									<a href="#tab-3" class="js-tab" data-tab-group="tab" data-tab-type="collapse">Switch 3</a>
+								</div>
+								<div class="doc-tab-content">
+									<div id="tab-1" class="tab-target js-tab-target" data-tab-group="tab">
+										<p>Switch 1</p>
+									</div>
+									<div id="tab-2" class="tab-target js-tab-target" data-tab-group="tab">
+										<p>Switch 2</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde optio omnis, laborum nisi neque explicabo quis harum nihil aperiam illum.</p>
+									</div>
+									<div id="tab-3" class="tab-target js-tab-target" data-tab-group="tab">
+										<p>Switch 3</p>
+									</div>
+								</div>
+							</div>
+							<div class="example">
+								<div class="doc-tab-nav">
+									<a href="#tabe-1" class="js-tab" data-tab-group="tabe">Switch 1</a>
+									<a href="#tabe-2" class="js-tab" data-tab-group="tabe" data-scroll-target="#tabe-2" data-scroll-duration="100">Switch 2</a>
+									<a href="#tabe-3" class="js-tab" data-tab-group="tabe">Switch 3</a>
+								</div>
+								<div class="doc-tab-content">
+									<div id="tabe-1" class="tab-target js-tab-target" data-tab-group="tabe">
+										<p>Switch 1</p>
+									</div>
+									<div id="tabe-2" class="tab-target js-tab-target" data-tab-group="tabe">
+										<p>Switch 2</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde optio omnis, laborum nisi neque explicabo quis harum nihil aperiam illum.</p>
+									</div>
+									<div id="tabe-3" class="tab-target js-tab-target" data-tab-group="tabe">
+										<p>Switch 3</p>
+									</div>
+								</div>
+							</div>
+							<a href="#test" class="js-scroll" data-scroll-target="#data-2" data-scroll-offset=".site-header">Test toggle</a>
+							<a href="#demo" class="js-scroll">Demo toggle</a>
+							<div id="data-1" class="markup-howto">
+								<h1 class="title">HTML Markup How-To</h1>
+								<ul class="markup-rules">
+									<li class="markup-rule">There are 3 class: global, module, and submodule</li>
+									<li class="markup-rule">Global has 1 word</li>
+									<li class="markup-rule">Module has 2 words</li>
+									<li class="markup-rule">Submodule has 3 words and located inside module</li>
+									<li class="markup-rule">Module can borrow another modules but can't modify them, to modify use global class (1 word)</li>
+									<li class="markup-rule">To use variant, add 1 word after main class</li>
+								</ul>
+							</div>
+							<div class="floating">
+								<div class="floater">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, natus!</div>
+								<div class="floater">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, sunt ad tempora magnam blanditiis mollitia dolores animi voluptatem, libero possimus vitae assumenda id nobis suscipit incidunt, tenetur pariatur maiores! Accusantium?</div>
+								<div class="floater">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos officia beatae nostrum error quaerat, ipsa, harum commodi modi. Aut, soluta.</div>
+								<div class="floater">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia distinctio placeat ab facere iusto nostrum, veritatis possimus quidem aliquam iure.</div>
+								<div class="floater">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis iusto ducimus, culpa numquam explicabo quis eveniet magnam, expedita saepe odit cumque ipsum? Debitis ipsam placeat atque quos similique natus autem.</div>
+								<div class="floater">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, dolorem.</div>
+							</div>
+							<div id="data-2" class="markup-howto js-scene" data-scene-offset="-240">
+								<h1 class="title">Scroll Target HTML Markup How-To</h1>
+								<ul class="markup-rules">
+									<li class="markup-rule">There are 3 class: global, module, and submodule</li>
+									<li class="markup-rule">Global has 1 word</li>
+									<li class="markup-rule">Module has 2 words</li>
+									<li class="markup-rule">Submodule has 3 words and located inside module</li>
+									<li class="markup-rule">Module can borrow another modules but can't modify them, to modify use global class (1 word)</li>
+									<li class="markup-rule">To use variant, add 1 word after main class</li>
+								</ul>
+							</div>
+							<div class="markup-howto">
+								<h1 class="title">HTML Markup How-To</h1>
+								<ul class="markup-rules">
+									<li class="markup-rule">There are 3 class: global, module, and submodule</li>
+									<li class="markup-rule">Global has 1 word</li>
+									<li class="markup-rule">Module has 2 words</li>
+									<li class="markup-rule">Submodule has 3 words and located inside module</li>
+									<li class="markup-rule">Module can borrow another modules but can't modify them, to modify use global class (1 word)</li>
+									<li class="markup-rule">To use variant, add 1 word after main class</li>
+								</ul>
+							</div>
+							<div id="test" class="markup-howto">
+								<h1 class="title">Test HTML Markup How-To</h1>
+								<ul class="markup-rules">
+									<li class="markup-rule">There are 3 class: global, module, and submodule</li>
+									<li class="markup-rule">Global has 1 word</li>
+									<li class="markup-rule">Module has 2 words</li>
+									<li class="markup-rule">Submodule has 3 words and located inside module</li>
+									<li class="markup-rule">Module can borrow another modules but can't modify them, to modify use global class (1 word)</li>
+									<li class="markup-rule">To use variant, add 1 word after main class</li>
+								</ul>
+							</div>
+							<div id="demo" class="markup-howto">
+								<h1 class="title">Demo HTML Markup How-To</h1>
+								<ul class="markup-rules">
+									<li class="markup-rule">There are 3 class: global, module, and submodule</li>
+									<li class="markup-rule">Global has 1 word</li>
+									<li class="markup-rule">Module has 2 words</li>
+									<li class="markup-rule">Submodule has 3 words and located inside module</li>
+									<li class="markup-rule">Module can borrow another modules but can't modify them, to modify use global class (1 word)</li>
+									<li class="markup-rule">To use variant, add 1 word after main class</li>
+								</ul>
+							</div>
+							<div class="markup-howto">
+								<h1 class="title">HTML Markup How-To</h1>
+								<ul class="markup-rules">
+									<li class="markup-rule">There are 3 class: global, module, and submodule</li>
+									<li class="markup-rule">Global has 1 word</li>
+									<li class="markup-rule">Module has 2 words</li>
+									<li class="markup-rule">Submodule has 3 words and located inside module</li>
+									<li class="markup-rule">Module can borrow another modules but can't modify them, to modify use global class (1 word)</li>
+									<li class="markup-rule">To use variant, add 1 word after main class</li>
+								</ul>
+							</div>
+							<div class="card-stack card-stack-alt">
+								<h2 class="card-stack-title"></h2>
+								<div class="card-stack-header">
+									<div class="star star-filled rating-star"></div>
+									<h2 class="name"></h2>
+								</div>
+								<div class="card-stack-content">
+									<p class="desc"></p>
+								</div>
+								<div class="card-stack-footer card-stack-footer-alt">
+									<p class="tags product-tags product-tags-vertical"></p>
+								</div>
+							</div>
+						</div>
+						<footer class="main-footer"></footer>
+					</div>
+
+					<!-- @import sidebar -->
+
+				</div>
+			</div>
+
+<!-- @import footer -->

@@ -1,0 +1,102 @@
+@at-root {
+	.table-responsive {
+		background: linear-gradient(to right, $white 25%, rgba($white, 0)),
+					linear-gradient(to right, rgba($white, 0), $white 75%) 100% 0,
+					radial-gradient(farthest-side at 0 50%, rgba($color-800, 0.2), rgba($color-800, 0)) 0 50%,
+					radial-gradient(farthest-side at 100% 50%, rgba($color-800, 0.2), rgba($color-800, 0)) 100% 50%;
+		background-attachment: local, local, scroll, scroll;
+		background-color: $white;
+		background-repeat: no-repeat;
+		background-size: 36px 100%, 36px 100%, 12px 100%, 12px 100%;
+		border: 1px solid $color-border;
+		overflow-x: auto;
+
+		.table {
+			background-color: transparent;
+			border: none;
+		}
+	}
+}
+
+@at-root {
+	.table-wrapper {
+		position: relative;
+		overflow-x: auto;
+
+		table {
+			min-width: 540px;
+		}
+	}
+
+	.table-list {
+		thead {
+			th {
+				padding: 12px;
+			}
+		}
+
+		tbody {
+			td {
+				padding: 4px 12px 0;
+				vertical-align: middle;
+				border: none;
+			}
+
+			tr {
+				&:first-child {
+					td {
+						padding: 12px 12px 0;
+					}
+				}
+
+				&:last-child {
+					td {
+						padding: 4px 12px 12px;
+					}
+				}
+			}
+		}
+
+		.table-actions {
+			text-align: right;
+
+			a {
+				margin-left: 4px;
+				font-size: 24px;
+				line-height: 1;
+			}
+		}
+	}
+}
+
+@at-root {
+	.table-footer {
+		display: block;
+		margin-top: 16px;
+
+		@include breakpoint(crawler) {
+			display: flex;
+			margin-top: 24px;
+		}
+
+		.selected-count {
+			flex: 1 1 0;
+			margin-bottom: 8px;
+
+			p {
+				margin: 0;
+				color: $color-text-light;
+			}
+
+			@include breakpoint(crawler) {
+				margin-bottom: 0;
+			}
+		}
+
+		.footer-action {
+			.button {
+				background-color: #7A7A7A;
+			}
+		}
+	}
+}

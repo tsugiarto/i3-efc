@@ -1,0 +1,105 @@
+@at-root {
+  .dashboard-heading {
+    margin-bottom: 32px;
+    text-align: center;
+
+    .heading-image {
+      margin-bottom: 24px;
+    }
+  }
+
+  .summaries {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12px -12px 28px;
+    text-align: center;
+
+    @include breakpoint(walker) {
+      margin: -16px -16px 24px;
+    }
+
+    .summary-item {
+      display: block;
+      width: 100%;
+      padding: 12px;
+
+      @include breakpoint(walker) {
+        width: 33.33333333333333%;
+        padding: 16px;
+      }
+    }
+
+    .summary {
+      -ms-flex-align: center;
+      align-items: center;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 18px;
+      border: 1px solid #EAEAEA;
+      border-radius: 6px;
+      background-color: $white;
+      line-height: 1;
+      box-shadow: 0 3px 3px rgba($black, 0.1);
+      text-align: left;
+
+      @include breakpoint(walker) {
+        padding: 32px;
+      }
+
+      .icon {
+        font-size: 58px;
+        margin-right: 12px;
+
+        &.card {
+          color: #1FA2FF;
+        }
+
+        &.deck {
+          color: #FAB62D;
+        }
+
+        &.folder {
+          color: #00D15B;
+        }
+      }
+
+      .meta {
+        .label {
+          display: block;
+          margin-bottom: 4px;
+          font-size: 13px;
+        }
+
+        .value {
+          font-size: 24px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .quick-instructions {
+    display: block;
+    background: $white;
+    padding: 24px 24px;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+
+    @include breakpoint(crawler) {
+      padding: 24px 32px;
+    }
+
+    .heading {
+      margin-bottom: 12px;
+      color: $color-text-light;
+    }
+
+    ol {
+      padding-left: 18px;
+
+      li {
+        padding-left: 8px;
+      }
+    }
+  }
+}

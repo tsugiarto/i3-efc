@@ -1,0 +1,377 @@
+@at-root {
+  .admin-page {
+    .admin-page-heading {
+      display: block;
+      vertical-align: top;
+      margin-bottom: 32px;
+
+      @include breakpoint(walker) {
+        display: flex;
+      }
+
+      .heading {
+        flex: 1 1 0;
+
+        .heading-title {
+          -ms-flex-align: center;
+          align-items: center;
+          display: -ms-flexbox;
+          display: flex;
+  
+          .title {
+            margin-bottom: 0;
+            margin-right: 18px;
+          }
+        }
+
+        .filter {
+          margin-top: 18px;
+          a {
+            color: $color-text-light;
+            padding-right: 8px;
+            margin-right: 6px;
+            text-decoration: none;
+            display: inline-block;
+
+            &:not(:last-child) {
+              border-right: 1px solid #D6D6D6;
+            }
+
+            &.is-current {
+              font-weight: 700;
+              color: $color-text;
+            }
+
+            &:hover {
+              color: $color-text;
+            }
+          }
+        }
+      }
+
+      .filter-input {
+        display: block;
+        margin-top: 24px;
+
+        @include breakpoint(walker) {
+          margin-top: 0;
+        }
+
+        .filter-input-search {
+          display: block;
+          position: relative;
+          margin-bottom: 8px;
+
+          .input {
+            width: 100%;
+          }
+
+          .search-button {
+            background: none;
+            border: none;
+            padding: 0;
+            position: absolute;
+            right: 4px;
+            top: 0;
+            font-size: 24px;
+            color: $color-text-light;
+          }
+        }
+
+        .filter-input-sort {
+          .input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@at-root {
+  .admin-page-content {
+    .form {
+      display: block;
+
+      @include breakpoint(walker) {
+        display: flex;
+      }
+
+      .form-text,
+      .form-select {
+        .input {
+          padding: 12px;
+        }
+      }
+
+      .form-main {
+        padding-right: 0;
+        flex: 1 1 0;
+        margin-bottom: 38px;
+
+        @include breakpoint(walker) {
+          padding-right: 48px;
+          margin-bottom: 0;
+        }
+
+        .form-section {
+          display: block;
+
+          .heading {
+            margin-bottom: 18px;
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 32px;
+          }
+        }
+      }
+
+      .form-aside {
+        display: block;
+        width: 100%;
+
+        @include breakpoint(walker) {
+          width: 280px;
+        }
+
+        .aside-actions {
+          display: block;
+          margin-bottom: 32px;
+
+          .button {
+            width: 100%;
+
+            &:not(:last-child) {
+              margin-bottom: 12px;
+            }
+          }
+        }
+
+        .preview {
+          margin-bottom: 28px;
+          width: 100%;
+          max-width: 280px;
+
+          .card {
+            display: block;
+            width: 100%;
+            position: relative;
+      
+            .card-frame {
+              display: block;
+              text-decoration: none;
+      
+              .card-image {
+                display: block;
+                background-color: $white;
+                border-radius: 6px;
+                border: 1px solid #EAEAEA;
+                margin-bottom: 12px;
+                box-shadow: 0 3px 2px rgba($black, 0.1);
+                transition: all 0.2s ease-in-out;
+                position: relative;
+                z-index: 8;
+                overflow: hidden;
+                background-size: cover !important;
+                background-position: center !important;
+      
+                img {
+                  width: 100%;
+                  height: auto;
+                  opacity: 0;
+                }
+
+                .card-image-text {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  flex: 1 1 0;
+                  font-size: 2vw;
+                  font-weight: 800;
+                  color: #E33944;
+                  font-family: 'CenturyGothic-Bold';
+                }
+      
+                .sound-icon {
+                  position: absolute;
+                  bottom: 6px;
+                  right: 7px;
+                  font-size: 24px;
+                  color: #7A7A7A;
+                  background-color: $white;
+                  line-height: 1;
+                  padding: 1px 2px;
+                  border-radius: 3px;
+                  cursor: pointer;
+
+                  &:hover {
+                    background-color: #0092FA;
+                    color: $white;
+                  }
+                }
+              }
+        
+              .card-meta {
+                .title {
+                  color: $color-text;
+                  margin-bottom: 0;
+                }
+                
+                .category {
+                  font-size: 14px;
+                  color: $color-text-light;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+
+        .aside-widget {
+          display: block;
+          border: 1px solid #EBEBEB;
+          border-radius: 4px;
+          padding: 24px;
+          background-color: $white;
+
+          .heading {
+            font-size: 14px;
+            color: $color-text-light;
+            margin-bottom: 8px;
+          }
+
+          ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+              .icon {
+                margin-right: 4px;
+                color: $color-text-lighter;
+                font-size: 18px;
+              }
+            }
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@at-root {
+  .button {
+    &.button-create-card {
+      display: block;
+      margin-bottom: 16px;
+      font-weight: 700;
+      padding: 8px 12px;
+    }
+  }
+}
+
+@at-root {
+  .action-notice {
+    display: block;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #C0E5FC;
+    margin-bottom: 24px;
+    position: relative;
+
+    &.success {
+      background-color: #A4FCAE;
+    }
+
+    &.alert {
+      background-color: #FFBDC0;
+    }
+
+    &.is-hidden {
+      display: none;
+    }
+
+    .notice-close {
+      position: absolute;
+      right: 8px;
+      top: 4px;
+      font-size: 13px;
+      cursor: pointer;
+      color: $color-alert-dark;
+    }
+  }
+}
+
+@at-root {
+  .export-label {
+    font-size: 13px;
+    display: inline-block;
+    border-radius: 3px;
+    background-color: #A4FCAE;
+    padding: 2px 6px;
+    margin-left: 8px;
+    position: relative;
+
+    .label-close {
+      margin-left: 6px;
+      text-decoration: none;
+      color: $color-alert-dark;
+    }
+  }
+
+  .popup-export-progress {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba($black, 0.2);
+    z-index: 99;
+    overflow-x: auto;
+
+    .progress-wrapper {
+      -ms-flex-align: center;
+      align-items: center;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      padding: 24px 16px;
+    }
+
+    .progress-container {
+      display: block;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: $white;
+      padding: 48px 24px;
+      text-align: center;
+      border-radius: 8px;
+
+      img {
+        display: inline-block;
+        margin-bottom: 24px;
+      }
+
+      h4 {
+        margin-bottom: 4px;
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

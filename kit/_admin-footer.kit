@@ -1,0 +1,222 @@
+		</div> <!-- #site-container -->
+
+		<!-- popup preview deck -->
+		<div id="deck-preview" class="popup-notice popup-inline mfp-hide">
+			<div class="popup-header">
+				<h2 class="title">Preview</h2>
+			</div>
+			<div class="popup-content">
+				<div class="audio-player deck-preview-player">
+					<div id="myvideo" class="audios">
+						<div class="audio is-current">
+							<div class="image">
+								<img src="uploads/horse.jpg" alt="Horse">
+							</div>
+							<audio controls>
+								<source src="uploads/sound/Animal/Horse.mp3" type="audio/mpeg">
+								Your browser does not support the audio element.
+							</audio>
+						</div>
+						<div class="audio">
+							<div class="image">
+								<img src="uploads/bear.jpg" alt="Bear">
+							</div>
+							<audio controls>
+								<source src="uploads/sound/Animal/Bear.mp3" type="audio/mpeg">
+								Your browser does not support the audio element.
+							</audio>
+						</div>
+						<div class="audio">
+							<div class="image">
+								<img src="uploads/dog.jpg" alt="Dog">
+							</div>
+							<audio controls>
+								<source src="uploads/sound/Animal/Dog.mp3" type="audio/mpeg">
+								Your browser does not support the audio element.
+							</audio>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- popup preview deck text 26.11.18 -->
+		<div id="deck-preview-text" class="popup-notice popup-inline mfp-hide">
+			<div class="popup-header">
+				<h2 class="title">Preview</h2>
+			</div>
+			<div class="popup-content">
+				<div class="audio-player deck-preview-player">
+					<div id="myvideo" class="audios">
+						<div class="audio is-current">
+							<div class="text">
+								<span class="card-image-text">Horse</span>
+							</div>
+							<audio controls>
+								<source src="uploads/sound/Animal/Horse.mp3" type="audio/mpeg">
+								Your browser does not support the audio element.
+							</audio>
+						</div>
+						<div class="audio">
+							<div class="text">
+								<span class="card-image-text">Bear</span>
+							</div>
+							<audio controls>
+								<source src="uploads/sound/Animal/Bear.mp3" type="audio/mpeg">
+								Your browser does not support the audio element.
+							</audio>
+						</div>
+						<div class="audio">
+							<div class="text">
+								<span class="card-image-text">Dog</span>
+							</div>
+							<audio controls>
+								<source src="uploads/sound/Animal/Dog.mp3" type="audio/mpeg">
+								Your browser does not support the audio element.
+							</audio>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- popup delete card -->
+		<div id="delete-card" class="popup-notice popup-inline mfp-hide">
+			<div class="popup-header">
+				<h2 class="title">Delete Card</h2>
+			</div>
+			<div class="popup-content">
+				<div class="deck-status">
+					<p class="heading">This card is used in existing deck(s):</p>
+					<div class="deck-status-update">
+						<ul>
+							<li><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-deck"/></svg> Big Dogs</li>
+							<li><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-deck"/></svg> Pets</li>
+						</ul>
+					</div>
+				</div>
+				<p>Are you sure about deleting this Card?</p>
+			</div>
+			<div class="popup-action">
+				<a class="button button-line mfp-close">Cancel</a>
+				<a href="#" class="button button-alert">Yes, delete this Card</a>
+			</div>
+		</div>
+
+		<!-- popup delete deck -->
+		<div id="delete-deck" class="popup-notice popup-inline mfp-hide">
+			<div class="popup-header">
+				<h2 class="title">Delete Deck</h2>
+			</div>
+			<div class="popup-content">
+				<div class="deck-status">
+					<p class="heading">This deck is used in existing folder(s):</p>
+					<div class="deck-status-update">
+						<ul>
+							<li><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-folder"/></svg> Animals</li>
+						</ul>
+					</div>
+				</div>
+				<p>Are you sure about deleting this Deck?</p>
+			</div>
+			<div class="popup-action">
+				<a class="button button-line mfp-close">Cancel</a>
+				<a href="#" class="button button-alert">Yes, delete this Deck</a>
+			</div>
+		</div>
+
+		<!-- popup delete folder -->
+		<div id="delete-folder" class="popup-notice popup-inline mfp-hide">
+			<div class="popup-header">
+				<h2 class="title">Delete Folder</h2>
+			</div>
+			<div class="popup-content">
+				<p>This action cannot be undone.</p>
+				<p>Are you sure about deleting this Folder?</p>
+			</div>
+			<div class="popup-action">
+				<a class="button button-line mfp-close">Cancel</a>
+				<a href="#" class="button button-alert">Yes, delete this Folder</a>
+			</div>
+		</div>
+
+		<!-- popup new card -->
+		<div id="popup-new-card" class="popup-notice popup-inline mfp-hide">
+			<div class="popup-header">
+				<h2 class="title">Add New Card</h2>
+			</div>
+			<div class="popup-content">
+				<form class="form">
+          <div class="form-main">
+            <div class="form-text">
+              <input type="text" class="input" placeholder="Card Name">
+            </div>
+            <div class="form-select">
+              <select class="input">
+                <option>Image Card</option>
+              </select>
+            </div>
+            <div class="form-file js-form-file">
+              <div class="input">
+                <label for="card-image" class="form-file-label"><span class="button">Upload Image</span> <span class="placeholder">Please upload an image</span></label>
+                <a href="#" class="form-file-remove" title="Remove attachment">×</a>
+                <input name="card_image" size="40" class="form-file-input" id="card-image" accept=".jpg,.png,.pdf,.jpeg" aria-invalid="false" type="file">
+              </div>
+            </div>
+            <div class="form-file js-form-file">
+              <div class="input">
+                <label for="card-audio" class="form-file-label"><span class="button">Upload Audio</span> <span class="placeholder">Please upload an audio</span></label>
+                <a href="#" class="form-file-remove" title="Remove attachment">×</a>
+                <input name="card_audio" size="40" class="form-file-input" id="card-audio" accept=".jpg,.png,.pdf,.jpeg" aria-invalid="false" type="file">
+              </div>
+            </div>
+            <div class="form-checkboxes">
+              <div class="form-checkbox">
+                <input type="checkbox" id="add-card" class="input">
+                <label for="add-card" class="label">Add Card to this Deck</label>
+              </div>
+            </div>
+            <div class="form-action">
+              <button class="button button-save" type="submit">Save</button>
+              <button class="button button-grey-light" type="button">Cancel</button>
+            </div>
+          </div>
+        </form>		
+			</div>
+		</div>
+
+		<!--
+			popup export
+			remove/add class is-hidden
+		-->
+		<div class="popup-export-progress is-hidden">
+			<div class="overlay">
+				<div class="progress-wrapper">
+					<div class="progress-container">
+						<img src="assets/images/art-screen.svg" alt="EFC Export Image">
+						<h4>Exporting Folders...</h4>
+						<p>Please wait for a moment</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--build:js assets/js/vendor.js -->
+		<script src="assets/js/vendor/svg4everybody.min.js"></script>
+		<script src="assets/js/vendor/stickyfill.min.js"></script>
+		<script src="assets/js/vendor/imagesloaded.min.js"></script>
+		<script src="assets/js/vendor/anime.min.js"></script>
+		<script src="assets/js/vendor/scrollMonitor.min.js"></script>
+		<script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+		<script src="assets/js/vendor/flickity.min.js"></script>
+		<script src="assets/js/vendor/repeater.js"></script>
+		<script src="assets/js/vendor/slip.js"></script>
+		<script src="assets/js/vendor/select2.min.js"></script>
+		<!-- endbuild -->
+		<!--build:js assets/js/bundle.js -->
+		<script src="assets/js/helper.js"></script>
+		<script src="assets/js/script.js"></script>
+		<script src="assets/js/style.js"></script>
+		<!-- endbuild -->
+	</body>
+</html> <!-- haunter owned! -->

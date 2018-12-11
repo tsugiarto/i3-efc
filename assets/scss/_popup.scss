@@ -1,0 +1,95 @@
+@at-root {
+	.popup-container {}
+	.popup-header {
+		margin-bottom: 24px;
+	}
+	.popup-content {
+		p {
+			margin-bottom: 6px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.popup-footer {
+		margin-top: 24px;
+	}
+	.popup-action {
+		margin-top: 32px;
+		text-align: right;
+
+		.button {
+			padding: 8px 18px;
+		}
+	}
+}
+
+@at-root {
+	.popup-inline-container {
+		background-color: $white;
+		padding: 32px;
+	}
+
+	.popup-inline-header {}
+}
+
+@at-root {
+	.notif-source {
+		display: none;
+	}
+
+	.deck-status-update {
+		.notif-source {
+			display: block;
+		}
+	}
+
+	.popup-notice {
+		width: 100%;
+		max-width: 640px;
+		margin: 32px auto;
+		background-color: $white;
+		position: relative;
+		padding: 32px;
+		border-radius: 7px;
+
+		button.mfp-close {
+			display: none;
+		}
+
+		.button {
+			&.mfp-close {
+				width: auto;
+				height: auto;
+				font-size: 16px;
+			}
+		}
+
+		.deck-status {
+			margin-bottom: 24px;
+
+			.heading {
+				text-transform: uppercase;
+				color: $color-text-light;
+				font-size: 14px;
+				margin-bottom: 12px;
+			}
+
+			.deck-status-update {
+				ul {
+					list-style-type: none;
+					padding: 0;
+
+					li {
+						.icon {
+							font-size: 18px;
+							margin-right: 2px;
+							color: $color-text-lighter;
+						}
+					}
+				}
+			}
+		}
+	}
+}

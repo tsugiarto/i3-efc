@@ -1,0 +1,75 @@
+.mfp-bg {
+	background: $black;
+	opacity: 0.8;
+
+	&.mfp-animation {
+		opacity: 0;
+		transition: all 0.2s ease-out;
+
+		&.mfp-ready {
+			opacity: 0.8;
+		}
+
+		&.mfp-removing {
+			opacity: 0;
+		}
+	}
+}
+
+.mfp-container {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.mfp-animation {
+
+	.mfp-content {
+		opacity: 0;
+		transition: all 0.2s ease-out;
+		transform: scale(0.8);
+	}
+
+	&.mfp-ready {
+
+		.mfp-content {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+
+	&.mfp-removing {
+
+		.mfp-content {
+			opacity: 0;
+			transform: scale(0.8);
+		}
+	}
+}
+
+button.mfp-close {
+	border-radius: 50%;
+	color: $white !important;
+	font-family: Arial;
+	font-style: normal;
+	font-size: 24px;
+	height: 1em;
+	line-height: 1em;
+	opacity: 1;
+	padding: 0;
+	position: absolute;
+	right: 24px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.2s ease-out;
+	top: 12px;
+	width: 1em;
+
+	&:hover,
+	&:focus {
+		background-color: $color-one-400;
+	}
+
+	&:active {
+		top: 12px;
+	}
+}

@@ -1,0 +1,24 @@
+@at-root {
+  .page-header {
+    padding: 90px 0 0;
+    margin-bottom: 48px;
+    background-size: 320px !important;
+    background-repeat: no-repeat !important;
+    background-position: bottom right !important;
+
+    .heading {
+      margin-bottom: 12px;
+      font-size: 32px;
+      text-transform: uppercase;
+      font-weight: 800;
+
+      @include breakpoint(crawler) {
+        font-size: 48px;
+      }
+    }
+
+    .subheading {
+      color: $color-text-light;
+    }
+  }
+}

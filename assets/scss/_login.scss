@@ -1,0 +1,95 @@
+@at-root {
+  .login-container {
+    max-width: 600px;
+    margin: 0 auto;
+
+    .heading {
+      margin-bottom: 32px;
+
+      img {
+        width: 100%;
+        max-width: 240px;
+      }
+
+      h2 {
+        font-weight: 500;
+        width: 100%;
+        margin-top: 18px;
+
+        @include breakpoint(crawler) {
+          padding-left: 24px;
+          text-align: left;
+          margin-top: 0;
+        }
+      }
+
+      .inner {
+        display: block;
+        text-align: center;
+
+        @include breakpoint(crawler) {
+          -ms-flex-align: center;
+          align-items: center;
+          display: -ms-flexbox;
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .login-form {
+    background-color: $white;
+    padding: 32px;
+    border-radius: 4px;
+    border: 1px solid #EFEFEF;
+
+    .form-text {
+      display: table;
+      width: 100%;
+      margin-bottom: 12px;
+
+      .form-label, .form-input {
+        display: block;
+        vertical-align: middle;
+
+        @include breakpoint(playerScreen) {
+          display: table-cell;
+        }
+      }
+
+      .form-label {
+        width: 100%;
+
+        @include breakpoint(playerScreen) {
+          width: 35%;
+          padding-right: 12px;
+        }
+
+        .label {
+          font-weight: 500;
+        }
+      }
+
+      .form-input {
+        width: 100%;
+
+        @include breakpoint(playerScreen) {
+          width: 65%;
+        }
+      }
+    }
+
+    .button-login {
+      width: 100%;
+    }
+
+    .forget-password-link {
+      display: block;
+      margin-top: 8px;
+      text-align: center;
+      color: $color-text-light;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+  }
+}

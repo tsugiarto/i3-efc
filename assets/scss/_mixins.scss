@@ -1,0 +1,317 @@
+// FUNCTIONS
+
+@function strip-unit($value) {
+	@return $value / ($value * 0 + 1);
+}
+
+// BREAKPOINT
+
+@mixin breakpoint($zombie) {
+	@if $zombie == creeper {
+		@media screen and (min-width: 414px) { @content; }
+	}
+	@else if $zombie == playerScreen {
+		@media screen and (min-width: 480px) { @content; }
+	}
+	@else if $zombie == crawler {
+		@media screen and (min-width: 640px) { @content; }
+	}
+	@else if $zombie == walker {
+		@media screen and (min-width: 768px) { @content; }
+	}
+	@else if $zombie == runner {
+		@media screen and (min-width: 1024px) { @content; }
+	}
+	@else if $zombie == jumper {
+		@media screen and (min-width: 1112px) { @content; }
+	}
+	@else if $zombie == flyer {
+		@media screen and (min-width: 1280px) { @content; }
+	}
+	@else if $zombie == teleporter {
+		@media screen and (min-width: 1440px) { @content; }
+	}
+	@else if $zombie == demigod {
+		@media screen and (min-width: 1600px) { @content; }
+	}
+	@else if $zombie == god {
+		@media screen and (min-width: 1920px) { @content; }
+	}
+	@else if $zombie == creeper-crawler {
+		@media screen and (min-width: 414px) and (max-width: 639px) { @content; }
+	}
+	@else if $zombie == crawler-walker {
+		@media screen and (min-width: 640px) and (max-width: 767px) { @content; }
+	}
+	@else if $zombie == walker-runner {
+		@media screen and (min-width: 768px) and (max-width: 1023px) { @content; }
+	}
+	@else if $zombie == runner-jumper {
+		@media screen and (min-width: 1024px) and (max-width: 1119px) { @content; }
+	}
+	@else if $zombie == jumper-flyer {
+		@media screen and (min-width: 1152px) and (max-width: 1279px) { @content; }
+	}
+	@else if $zombie == flyer-teleporter {
+		@media screen and (min-width: 1280px) and (max-width: 1339px) { @content; }
+	}
+	@else if $zombie == teleporter-demigod {
+		@media screen and (min-width: 1440px) and (max-width: 1599px) { @content; }
+	}
+	@else if $zombie == demigod-god {
+		@media screen and (min-width: 1600px) and (max-width: 1919px) { @content; }
+	}
+	@else if $zombie == watcher {
+		@media screen and (-o-min-device-pixel-ratio: 1.5),
+			   screen and (-webkit-min-device-pixel-ratio: 1.5),
+			   screen and (min-resolution: 144dpi) { @content; }
+	}
+}
+
+// TYPOGRAPHY
+
+@mixin font-fluid($min-vw, $max-vw, $min-value, $max-value) {
+	font-size: $min-value;
+
+	@media screen and (min-width: $min-vw) {
+		font-size: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)});
+	}
+
+	@media screen and (min-width: $max-vw) {
+		font-size: $max-value;
+	}
+}
+
+@mixin font-size-100 {
+	font-size: $font-size-100;
+	line-height: $line-height-100;
+}
+
+@mixin font-size-200 {
+	font-size: $font-size-200;
+	line-height: $line-height-200;
+}
+
+@mixin font-size-300 {
+	font-size: $font-size-300;
+	line-height: $line-height-300;
+}
+
+@mixin font-size-400 {
+	font-size: $font-size-400;
+	line-height: $line-height-400;
+}
+
+@mixin font-size-500 {
+	font-size: $font-size-500;
+	line-height: $line-height-500;
+}
+
+@mixin font-size-600 {
+	font-size: $font-size-600;
+	line-height: $line-height-600;
+}
+
+@mixin font-size-700 {
+	font-size: $font-size-700;
+	line-height: $line-height-700;
+}
+
+@mixin font-size-800 {
+	font-size: $font-size-800;
+	line-height: $line-height-800;
+}
+
+@mixin font-size-900 {
+	font-size: $font-size-900;
+	line-height: $line-height-900;
+}
+
+@mixin font-size-display {
+	font-size: $font-size-display;
+	line-height: $line-height-display;
+}
+
+@mixin font-size-jumbo {
+	font-size: $font-size-jumbo;
+	line-height: $line-height-jumbo;
+}
+
+@mixin font-size-h1 {
+	font-size: $font-size-h3;
+	line-height: $line-height-h3;
+
+	@include breakpoint(creeper) {
+		font-size: $font-size-h2;
+		line-height: $line-height-h2;
+	}
+
+	@include breakpoint(crawler) {
+		font-size: $font-size-h1;
+		line-height: $line-height-h1;
+	}
+}
+
+@mixin font-size-h2 {
+	font-size: $font-size-h4;
+	line-height: $line-height-h4;
+
+	@include breakpoint(creeper) {
+		font-size: $font-size-h3;
+		line-height: $line-height-h3;
+	}
+
+	@include breakpoint(crawler) {
+		font-size: $font-size-h2;
+		line-height: $line-height-h2;
+	}
+}
+
+@mixin font-size-h3 {
+	font-size: $font-size-h4;
+	line-height: $line-height-h4;
+
+	@include breakpoint(creeper) {
+		font-size: $font-size-h3;
+		line-height: $line-height-h3;
+	}
+}
+
+@mixin font-size-h4 {
+	font-size: $font-size-h4;
+	line-height: $line-height-h4;
+}
+
+@mixin font-size-h5 {
+	font-size: $font-size-h5;
+	line-height: $line-height-h5;
+}
+
+@mixin font-size-h6 {
+	font-size: $font-size-h6;
+	line-height: $line-height-h6;
+}
+
+@mixin ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+@mixin hyphenate {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	//hyphens: auto;
+}
+
+// LAYOUT
+
+@mixin aside {
+	flex: 1 1 auto;
+	width: 100%;
+
+	@include breakpoint(runner) {
+		flex: 0 0 auto;
+		margin-left: 32px;
+		width: 256px;
+	}
+
+	@include breakpoint(jumper) {
+		margin-left: 48px;
+		width: 320px;
+	}
+}
+
+@mixin aside-left {
+	margin-bottom: 24px;
+	order: -1;
+
+	@include breakpoint(runner) {
+		margin-bottom: 0;
+		margin-left: 0;
+		margin-right: 32px;
+	}
+
+	@include breakpoint(jumper) {
+		margin-right: 48px;
+	}
+}
+
+@mixin clearfix {
+
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin hidden {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+@mixin wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 16px;
+	padding-right: 16px;
+
+	@include breakpoint(creeper) {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	@include breakpoint(crawler) {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	@include breakpoint(runner) {
+		padding-left: 48px;
+		padding-right: 48px;
+	}
+}
+
+@mixin unwrapper {
+	margin-left: -16px;
+	margin-right: -16px;
+
+	@include breakpoint(creeper) {
+		margin-left: -24px;
+		margin-right: -24px;
+	}
+
+	@include breakpoint(crawler) {
+		margin-left: -32px;
+		margin-right: -32px;
+	}
+
+	@include breakpoint(runner) {
+		margin-left: -48px;
+		margin-right: -48px;
+	}
+
+	@include breakpoint(flyer) {
+		margin-left: calc(-50vw + (1280px - 80px) / 2);
+		margin-right: calc(-50vw + (1280px - 80px) / 2);
+	}
+}
+
+@mixin visible {
+	display: block !important;
+	height: auto !important;
+	opacity: 1 !important;
+	overflow: visible !important;
+	visibility: visible !important;
+}

@@ -1,0 +1,95 @@
+<!-- @import variables -->
+<!-- $admin-card-nav: item item-current -->
+<!-- @import admin-header -->
+
+<div class="site-content admin-site-content">
+  <div class="inner">
+
+    <div class="main admin-main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+      <div class="wrapper">
+        
+        <div class="admin-page">
+          <div class="admin-page-heading">
+            <div class="heading">
+              <div class="heading-title">
+                <h1 class="title">Add New Card</h1>
+              </div>
+            </div>
+          </div>
+          <div class="admin-page-content">
+            
+            <form class="form">
+              <div class="form-main">
+                <div class="form-text">
+                  <input type="text" class="input" placeholder="Card Name">
+                </div>
+                <div class="form-select">
+                  <select class="input">
+                    <option>Image Card</option>
+                  </select>
+                </div>
+                <div class="form-file js-form-file">
+                  <div class="input">
+                    <label for="card-image" class="form-file-label"><span class="button">Upload Image</span> <span class="placeholder">Upload an image file (1200x675 px)</span></label>
+                    <a href="#" class="form-file-remove" title="Remove attachment">×</a>
+                    <input name="card_image" size="40" class="form-file-input" id="card-image" accept=".jpg,.png,.pdf,.jpeg" aria-invalid="false" type="file">
+                  </div>
+                </div>
+                <div class="form-file js-form-file">
+                  <div class="input">
+                    <label for="card-audio" class="form-file-label"><span class="button">Upload Audio</span> <span class="placeholder">Upload an audio file (mp3/wav/ogg)</span></label>
+                    <a href="#" class="form-file-remove" title="Remove attachment">×</a>
+                    <input name="card_audio" size="40" class="form-file-input" id="card-audio" accept=".jpg,.png,.pdf,.jpeg" aria-invalid="false" type="file">
+                  </div>
+                </div>
+                <div class="form-checkboxes">
+                  <div class="form-checkbox">
+                    <input type="checkbox" id="add-card" class="input">
+                    <label for="add-card" class="label">Add Card to this Deck</label>
+                  </div>
+                </div>
+                <div class="form-action">
+                  <button class="button button-save" type="submit">Save</button>
+                  <button class="button button-grey-light" type="button">Cancel</button>
+                </div>
+              </div>
+              <div class="form-aside">
+                <div class="preview">
+                  <div class="card">
+                    <div class="card-frame">
+                      <div href="#" class="card-image" style="background: url(assets/images/preview-placeholder.png);">
+                        <img src="assets/images/card-placeholder.png">
+                        <span class="sound-icon">
+                          <svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-audio"/></svg>
+                        </span>
+                      </div>
+                      <div class="card-meta">
+                        <h4 class="title">Card Name</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-widget">
+                  <p class="heading">DECKS THAT USE THIS CARD</p>
+                  <ul>
+                    <li><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-deck"/></svg> Big Dogs</li>
+                    <li><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-deck"/></svg> Pets</li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+        <!-- @import designby -->
+
+      </div>
+    </div>
+
+    <!-- @import admin-side-menu -->
+
+  </div>
+</div>
+
+<!-- @import admin-footer -->

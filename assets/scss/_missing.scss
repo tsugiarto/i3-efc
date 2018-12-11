@@ -1,0 +1,19 @@
+@at-root {
+  .missing {
+    text-align: center;
+    margin-top: 54px;
+
+    h1 {
+      font-size: 120px;
+      margin-bottom: 0;
+
+      @include breakpoint(crawler) {
+        font-size: 140px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}

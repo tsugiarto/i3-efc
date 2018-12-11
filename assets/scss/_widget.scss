@@ -1,0 +1,10 @@
+@at-root {
+	.widget-container {
+
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
+	}
+
+	.widget-header {}
+}

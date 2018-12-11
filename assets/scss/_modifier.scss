@@ -1,0 +1,76 @@
+// GLOBALS
+// .only-* and .is-*
+
+.only-desktop {
+	display: none;
+
+	@include breakpoint(walker) {
+		display: block;
+	}
+}
+
+.only-mobile {
+
+	@include breakpoint(walker) {
+		display: none;
+	}
+}
+
+.only-sr {
+	@include hidden;
+}
+
+.is-disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+.is-hidden {
+	@include hidden;
+}
+
+.is-loading {
+	position: relative;
+
+	&:before {
+		content: "";
+		display: block;
+		background-color: $white;
+		bottom: 0;
+		left: 0;
+		opacity: 0.6;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 8;
+	}
+
+	&:after {
+		content: "";
+		animation: spin 1.5s infinite linear;
+		border-left: 4px solid rgba($color-800, 0.2);
+		border-bottom: 4px solid rgba($color-800, 0.2);
+		border-right: 4px solid rgba($color-800, 0.2);
+		border-top: 4px solid $color-one-500;
+		border-radius: 100%;
+		display: block;
+		height: 32px;
+		left: 50%;
+		margin: -16px 0 0 -16px;
+		outline: 1px solid transparent;
+		position: absolute;
+		top: 50%;
+		width: 32px;
+		z-index: 2;
+	}
+
+	&.is-loading-small {
+
+		&:after {
+			border-width: 3px;
+			height: 16px;
+			margin: -8px 0 0 -8px;
+			width: 16px;
+		}
+	}
+}

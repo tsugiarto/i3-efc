@@ -1,0 +1,63 @@
+<!-- @import variables -->
+<!-- $admin-users-nav: item item-current -->
+<!-- @import admin-header -->
+
+<div class="site-content admin-site-content">
+  <div class="inner">
+
+    <div class="main admin-main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+      <div class="wrapper">
+        
+        <div class="admin-page">
+          <div class="admin-page-heading">
+            <div class="heading">
+              <div class="heading-title">
+                <h1 class="title">User</h1>
+                <a href="admin-users.html" class="button button-grey">Back to Users</a>
+              </div>
+            </div>
+          </div>
+          <div class="admin-page-content">
+            
+            <form class="form">
+              <div class="form-main">
+                <div class="form-section">
+                  <div class="form-text">
+                    <label for="user-email" class="label">Email</label>
+                    <input type="text" id="user-email" class="input">
+                  </div>
+                  <div class="form-text">
+                    <label for="user-password" class="label">Password</label>
+                    <input type="text" id="user-password" class="input">
+                  </div>
+                  <div class="form-select">
+                    <label for="user-role" class="label">Role</label>
+                    <select id="user-role" class="input" name="deck">
+                      <option>Admin</option>
+                      <option>Super Admin</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-aside">
+                <div class="aside-actions">
+                  <button class="button button-save" type="submit">Save</button>
+                  <button class="button button-grey" type="button">Delete</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+        <!-- @import designby -->
+
+      </div>
+    </div>
+
+    <!-- @import admin-side-menu -->
+
+  </div>
+</div>
+
+<!-- @import admin-footer -->
